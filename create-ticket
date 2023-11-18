@@ -133,7 +133,7 @@
             </form>
         </div>
         <div id="back-to-home-container">
-            <a href="index.html" id="back-to-home">Back to Home</a>
+            <a href="Home" id="back-to-home">Back to Home</a>
         </div>
     </div>
 
