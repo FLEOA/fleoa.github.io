@@ -137,6 +137,7 @@
     </div>
 
     <script>
+        const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL;
         function sendWebhook() {
             var username = document.getElementById('username').value;
             var title = document.getElementById('title').value;
@@ -153,7 +154,7 @@
                 }]
             };
 
-            fetch('WEBHOOK_URL', {
+            fetch('DISCORD_WEBHOOK_URL', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
