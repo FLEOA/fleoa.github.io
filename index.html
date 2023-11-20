@@ -14,6 +14,7 @@
             background: #2d3436 url(img/bg.png) center center/cover no-repeat fixed;
             position: relative;
             animation: myAnim 2s ease 0s 1 normal forwards;
+            overflow-y: scroll;
             top: 325px;
         }
 
@@ -27,7 +28,7 @@
         }
 
         #grey-box {
-            background-color: rgba(0,0,0,0.75);
+            background-color: rgba(0, 0, 0, 0.75);
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -38,6 +39,12 @@
             z-index: 0;
             border-radius: 20px;
             padding: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #grey-box {
+                margin-top: 25px;
+            }
         }
 
         #logo,
@@ -96,6 +103,14 @@
         .button:hover {
             background-color: #d63031;
         }
+
+        @media only screen and (max-width: 600px) {
+            .button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
 
         @keyframes myAnim {
             0% {
@@ -163,15 +178,16 @@
             <div id="buttons-container">
                 <a href="https://discord.gg/ZWs5F9NZAt" class="button" target="_blank">Discord</a>
                 <a href="Youtube" class="button">Youtube</a>
-                <a href="https://www.tiktok.com/@feloa_?is_from_webapp=1&sender_device=pc" class="button" target="_blank">TikTok</a>
-                <a href="Ticket-Form" class="button">Create a Ticket</a>
+                <a href="https://www.tiktok.com/@feloa_?is_from_webapp=1&sender_device=pc" class="button"
+                    target="_blank">TikTok</a>
+                <a href="Create-a-Ticket" class="button">Create a Ticket</a>
             </div>
         </header>
     </div>
 
 
     <script>
-        
+
     </script>
 </body>
 
